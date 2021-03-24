@@ -1,0 +1,7 @@
+name = "shart-info-back"
+type = "webpack"
+account_id = "78e4f807e54af45872b2ecabeac2b06d"
+workers_dev = true
+route = ""
+zone_id = ""
+webpack_config = "webpack.config.js"
