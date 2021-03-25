@@ -5,23 +5,23 @@ import { RouteCondition, RouteHandler, RouteInfo } from "./types"
  * boolean indicating if the request uses that HTTP method,
  * header, host or referrer.
  */
-const Method = (method: string) => (req: Request) =>
+export const Method = (method: string) => (req: Request) =>
     req.method.toLowerCase() === method.toLowerCase()
-const Connect = Method('connect')
-const Delete = Method('delete')
-const Get = Method('get')
-const Head = Method('head')
-const Options = Method('options')
-const Patch = Method('patch')
-const Post = Method('post')
-const Put = Method('put')
-const Trace = Method('trace')
+export const Connect = Method('connect')
+export const Delete = Method('delete')
+export const Get = Method('get')
+export const Head = Method('head')
+export const Options = Method('options')
+export const Patch = Method('patch')
+export const Post = Method('post')
+export const Put = Method('put')
+export const Trace = Method('trace')
 
-const Header = (header: string, val: string) => (req: Request) => req.headers.get(header) === val
-const Host = (host: string) => Header('host', host.toLowerCase())
-const Referrer = (host: string) => Header('referrer', host.toLowerCase())
+export const Header = (header: string, val: string) => (req: Request) => req.headers.get(header) === val
+export const Host = (host: string) => Header('host', host.toLowerCase())
+export const Referrer = (host: string) => Header('referrer', host.toLowerCase())
 
-const Path = (regExp: string) => (req: Request) => {
+export const Path = (regExp: string) => (req: Request) => {
     const url = new URL(req.url)
     const path = url.pathname
     const match = path.match(regExp) || []

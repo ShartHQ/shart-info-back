@@ -17,6 +17,7 @@
     "@cloudflare/workers-types": "^2.0.0",
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
+    "@types/ua-parser-js": "^0.7.35",
     "chai": "^4.2.0",
     "mocha": "^8.0.1",
     "prettier": "^2.0.5",
@@ -26,5 +27,8 @@
     "typescript": "^3.9.5",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "ua-parser-js": "^0.7.25"
   }
 }

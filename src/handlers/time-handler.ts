@@ -1,14 +1,9 @@
 
-export async function timeHandler(request: Request) {
+export async function timeHandler(request: Request): Promise<unknown> {
     const date = new Date();
-    const result = {
+
+    return Promise.resolve({
         microtime: date.getTime(),
         isoTime: date.toISOString(),
-    }
-
-    const init = {
-        headers: { 'content-type': 'application/json' },
-    }
-    const body = JSON.stringify(result)
-    return new Response(body, init)
+    })
 }
