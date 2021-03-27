@@ -16,11 +16,11 @@ const tpl = (vm: VM) =>
 <body>
     <h1> You're connecting from ${vm.country} ${vm.emoji} country to our ${vm.colo} datacenter </h1>
     <ul>
-        <li><a href="/browser">Browser Info<a></li>
-        <li><a href="/cf">Cloudflare Info<a></li>
-        <li><a href="/headers">Headers Info<a></li>
-        <li><a href="/ip">IP Info<a></li>
-        <li><a href="/time">Time Info<a></li>
+        <li><a href="/api/browser">Browser Info<a></li>
+        <li><a href="/api/cf">Cloudflare Info<a></li>
+        <li><a href="/api/headers">Headers Info<a></li>
+        <li><a href="/api/ip">IP Info<a></li>
+        <li><a href="/api/time">Time Info<a></li>
     </ul>
 </body>
 </html>

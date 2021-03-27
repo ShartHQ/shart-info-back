@@ -1,10 +1,10 @@
-name = "shart-info-back"
+name = "shart-info-api"
 type = "webpack"
 webpack_config = "webpack.config.js"
 account_id = "78e4f807e54af45872b2ecabeac2b06d"
 workers_dev = true
 
-[env.production]
-workers_dev = true
-route = "https://info.sasuke.ir/"
+#[env.production]
+#workers_dev = false
+route = "https://info.sasuke.ir/api*"
 zone_id = "5c971abadb51a42be2f843a88f5628fb"
